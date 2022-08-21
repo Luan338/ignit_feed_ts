@@ -1,0 +1,105 @@
+.container {
+  padding-top: 2rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar_comment {
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 4px solid var(--gray-800);
+  outline: 2px solid var(--green-500);
+}
+
+.contain {
+  width: 92%;
+}
+
+.card_comment {
+  background-color: var(--gray-700);
+  width: 100%;
+  height: 10rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  padding: 1.2rem 0rem 0rem 1.2rem;
+}
+
+.card_comment h3 {
+  color: var(--gray-100);
+}
+
+.card_comment h4 {
+  color: var(--gray-300);
+}
+
+.content_profile {
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+
+.content_profile span {
+  color: var(--gray-400);
+  font-size: 0.8rem;
+}
+
+.content_profile time {
+  color: var(--gray-400);
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.content_profile button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-300);
+}
+
+.content_profile button:hover {
+  color: #f75a68;
+}
+
+.box_interaction {
+  cursor: pointer;
+  width: 7.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box_interaction h3 {
+  color: var(--gray-400);
+  font-size: 1rem;
+}
+
+.box_interaction:hover h3 {
+  color: var(--green-300);
+}
+
+.box_interaction button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--gray-400);
+}
+
+.box_interaction:hover button {
+  color: var(--green-300);
+}
+
+.box_interaction button span::before {
+  content: "\2022";
+  padding: 0rem 0.25rem;
+}

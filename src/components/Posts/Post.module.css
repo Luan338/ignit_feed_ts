@@ -1,0 +1,120 @@
+.Post {
+  background-color: var(--gray-800);
+  border-radius: 5px;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 14rem;
+  line-height: 1.4;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.authorInfo strong {
+  color: var(--gray-100);
+}
+
+.authorInfo span {
+  color: var(--gray-400);
+}
+
+time {
+  color: var(--gray-400);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 15rem;
+  padding: 1.5rem 0;
+}
+
+.content a {
+  color: #00b37e;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1.5rem 0px;
+  height: 15.5rem;
+}
+
+.container_footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 1.5rem;
+  height: 10rem;
+}
+
+textarea {
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 10rem;
+  background-color: var(--gray-900);
+  color: var(--gray-300);
+  resize: none;
+}
+
+textarea:focus {
+  border: 2px solid var(--gray-800);
+  outline: 2px solid #00b37e;
+}
+
+.comment_btn {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.container_footer:focus-within .comment_btn {
+  visibility: visible;
+  max-height: none;
+}
+
+.btn_publish {
+  margin-top: 1.5rem;
+  background-color: var(--green-500);
+  color: var(--gray-100);
+  border: none;
+  border-radius: 5px;
+  width: 8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+/* O hover so vai funcionar caso o botao não esteja disabled */
+.btn_publish:not(:disabled):hover {
+  background-color: var(--green-300);
+}
+
+.btn_publish:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
